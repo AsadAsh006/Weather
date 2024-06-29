@@ -35,7 +35,6 @@ const [longitude,setLongitude]=useState('')
       if (json.coord) {
         setLatitude(json.coord.lat);
         setLongitude(json.coord.lon);
-       
       }
     } catch (error) {
       console.error("Error fetching current weather data:", error);
